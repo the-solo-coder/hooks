@@ -26,57 +26,19 @@ const CounterOne = () => {
   return (
     <div>
       <div>Count - {count.firstCounter}</div>
-      <button
-        onClick={() => {
-          dispatch({
-            type: "increment",
-            value: 1
-          });
-        }}
-      >
+      <button onClick={() => dispatch({ type: "increment", value: 1 })}>
         Increment
       </button>
-      <button
-        onClick={() => {
-          dispatch({
-            type: "decrement",
-            value: 1
-          });
-        }}
-      >
+      <button onClick={() => dispatch({ type: "decrement", value: 1 })}>
         Decrement
       </button>
-
-      <button
-        onClick={() => {
-          dispatch({
-            type: "increment",
-            value: 5
-          });
-        }}
-      >
+      <button onClick={() => dispatch({ type: "increment", value: 5 })}>
         Increment 5
       </button>
-      <button
-        onClick={() => {
-          dispatch({
-            type: "decrement",
-            value: 5
-          });
-        }}
-      >
+      <button onClick={() => dispatch({ type: "decrement", value: 5 })}>
         Decrement 5
       </button>
-
-      <button
-        onClick={() => {
-          dispatch({
-            type: "reset"
-          });
-        }}
-      >
-        Reset
-      </button>
+      <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
     </div>
   );
 };
